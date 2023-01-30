@@ -12,11 +12,11 @@ public class SQRServiceTest {
     //      "22,100,1000"
     //  })
     @CsvFileSource(files = "src/test/resources/Range.csv")
-    public void testCalcExact(int expected, int StartOfRange, int EndOfRange) {
+    public void testCalcExact(int expected, int startOfRange, int endOfRange) {
         SQRService service = new SQRService();
 
         //int expected = 22;
-        int actual = service.determineNumberOfSquares(StartOfRange, EndOfRange);
+        int actual = service.determineNumberOfSquares(startOfRange, endOfRange);
 
         Assertions.assertEquals(expected, actual);
         System.out.println(+expected + " Количество квадратов в данном диапазоне " + actual);

@@ -1,22 +1,22 @@
 package ru.netology.sqr.packagesandcycles.services;
 
 public class SQRService {
-    public int determineNumberOfSquares(int StartOfRange, int EndOfRange) {
+    public int determineNumberOfSquares(int startOfRange, int endOfRange) {
 
-        int NumberOfSqueres = 0;
+        int numberOfSqueres = 0;
         for (int i = 10; i <= 99; i++) {
-            int SquareOfNumber = i * i;
-            if (SquareOfNumber >= StartOfRange) {
+            int squareOfNumber = i * i;
+            if (squareOfNumber >= startOfRange) {
 
-                if (SquareOfNumber < EndOfRange) {
-                    NumberOfSqueres = NumberOfSqueres + 1;
-                } else ;
-            } else ;
+                if (squareOfNumber < endOfRange) {
+                    numberOfSqueres = numberOfSqueres + 1;
+                }
+            }
 
         }
 
 
-        return NumberOfSqueres;
+        return numberOfSqueres;
     }
 
 }
